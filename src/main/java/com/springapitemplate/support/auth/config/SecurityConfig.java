@@ -39,7 +39,7 @@ public class SecurityConfig {
                         .authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()))
                 .authorizeHttpRequests(requests -> requests
                         .requestMatchers("/api/v1/health", "/error").permitAll()
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                        .requestMatchers("/docs/index.html").permitAll()
                         .anyRequest().authenticated());
 
         http.oauth2ResourceServer(resourceServerConfig -> resourceServerConfig
