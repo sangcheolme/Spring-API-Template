@@ -22,4 +22,5 @@ public class HealthCheckTestResponse {
         this.message = message;
         this.data = data;
     }
+
 }

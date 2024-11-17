@@ -31,4 +31,5 @@ public class OpenFeignConfig {
     public Retryer retryer() {
         return new Retryer.Default(1000, 2000, 3);
     }
+
 }
