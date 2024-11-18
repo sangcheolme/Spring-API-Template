@@ -1,4 +1,4 @@
-package com.springapitemplate.api.controller;
+package com.springapitemplate.docs;
 
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.*;
 
